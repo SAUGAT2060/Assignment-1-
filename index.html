@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>    
+<h1>Pizza Pizza</h1>
+<img src="pizza.jpg" alt="OKOK" width="300" height="150">
+
+<form>
+    
+    <fieldset>
+        <legend>PIZZA FORM</legend>
+        <label for="Number of Pizza">Number of Pizza</label>
+        <input type="text" placeholder="Enter the number of pizzas"><br>
+        </fieldset>
+        <fieldset>
+        <label for="size">Choose your pizza size:</label>
+        
+        <select>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="extra_large">Extra Large</option>
+      </select><br>
+        <br><label for="Shape of Pizza">Shape</label>
+        <select id="dropdown" name="dropdown">
+            <option value="Square">Square</option>
+            <option value="Round">Round</option>
+        </select>
+       <fieldset>
+    <legend>CHOOSE YOUR TOPPINGS:</legend>
+    <input type="checkbox"  value="pepperoni">
+    <label for="pepperoni">Pepperoni</label>
+    <input type="checkbox"  value="mushrooms">
+    <label for="mushrooms">Mushrooms</label>
+    <input type="checkbox" value="onions">
+    <label for="onions">Onions</label>
+    <input type="checkbox"  value="sausage">
+    <label for="sausage">Sausage</label>
+    <input type="checkbox" value="bacon">
+    <label for="bacon">Bacon</label>
+    <input type="checkbox" value="extra_cheese">
+    <label for="extra_cheese">Extra Cheese</label>
+    <input type="checkbox" value="black_olives">
+    <label for="black_olives">Black Olives</label>
+    <input type="checkbox" value="green_peppers">
+    <label for="green_peppers">Green Peppers</label>
+    <input type="checkbox" value="pineapple">
+    <label for="pineapple">Pineapple</label>
+    <input type="checkbox" value="spinach">
+    <label for="spinach">Spinach</label>
+</fieldset>
+<fieldset>
+    <legend> CHOOSE YOUR CRUST TYPE:</legend>
+    <input type="radio" value="deep_dish">
+    <label for="deep_dish">Deep Dish</label>
+    <input type="radio" value="thin_crust">
+    <label for="thin_crust">Thin Crust</label>
+    <input type="radio"  value="stuffed_crust">
+    <label for="stuffed_crust">Stuffed Crust</label>
+    <input type="radio" value="gluten_free">
+    <label for="gluten_free">Gluten-Free Crust</label>
+</fieldset>
+<fieldset>
+    <legend> YOUR DINING OPTIONS:</legend>
+    <input type="radio" value="take_out">
+    <label for="take_out">Take Out</label>
+    <input type="radio" value="delivery">
+    <label for="delivery">Delivery</label>
+    <input type="radio" value="eat_in">
+    <label for="eat_in">Eat In</label>
+    
+</fieldset>
+<fieldse>
+<form action="/submit_order" method="post">
+    <!-- Customer Information -->
+    <fieldset>
+      <legend>Customer Information</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="customer_name" required><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="customer_phone" required><br><br>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="customer_address"><br><br>
+    </fieldset><br>
+<fieldset>
+    <label for="Customer Instructions">Customer Instructions</label><br>
+        <textarea cols="30" rows="10" placeholder="Enter the information"></textarea>
+    <br></fieldset>
+    <input type="submit" value="Submit Order">
+    <input type="reset" value="Reset Form">
+    <footer>
+        <p>Contact us at 1-647-98000 for more.</p>
+        <p>Visit us at www.Pizzapizza.com.</p>
+    </footer>
+
+</form>
+</body>
+</html>
